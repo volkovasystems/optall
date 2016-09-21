@@ -1,0 +1,31 @@
+{
+  "name": "optall",
+  "version": "0.0.0",
+  "description": "Extract all designated elements.",
+  "main": "optall.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/optall.git"
+  },
+  "keywords": [
+    "extract",
+    "all",
+    "designated",
+    "elements",
+    "optall"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/optall/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/optall#readme",
+  "dependencies": {
+    "harden": "^0.3.5",
+    "raze": "0.0.8",
+    "zelf": "0.0.4"
+  }
+}

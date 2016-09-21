@@ -1,0 +1,29 @@
+{
+  "name": "optall",
+  "description": "Extract all designated elements.",
+  "main": "optall.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "extract",
+    "all",
+    "designated",
+    "elements",
+    "optall"
+  ],
+  "homepage": "https://github.com/volkovasystems/optall",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "harden": "^0.3.5",
+    "raze": "^0.0.8",
+    "zelf": "^0.0.4"
+  }
+}
