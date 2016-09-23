@@ -1,5 +1,6 @@
 {
   "name": "optall",
+  "version": "0.0.0",
   "description": "Extract all designated elements.",
   "main": "optall.js",
   "authors": [
