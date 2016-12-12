@@ -57,7 +57,7 @@
 	@end-include
 */
 
-const doubt = require( "harden" );
+const doubt = require( "doubt" );
 const falze = require( "falze" );
 const harden = require( "harden" );
 const protype = require( "protype" );
