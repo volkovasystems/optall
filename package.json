@@ -1,6 +1,6 @@
 {
   "name": "optall",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Extract all designated elements.",
   "main": "optall.js",
   "scripts": {
@@ -24,8 +24,11 @@
   },
   "homepage": "https://github.com/volkovasystems/optall#readme",
   "dependencies": {
-    "harden": "^0.3.5",
-    "raze": "0.0.8",
-    "zelf": "0.0.4"
+    "doubt": "^0.4.0",
+    "falze": "^0.2.0",
+    "harden": "^0.9.0",
+    "protype": "^0.4.0",
+    "pyck": "^0.4.0",
+    "zelf": "^0.3.0"
   }
 }

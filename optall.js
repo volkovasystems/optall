@@ -40,44 +40,29 @@
 	@end-module-configuration
 
 	@module-documentation:
-		Extract all designated elements.
+		Extract all designated elements with modifier.
 
-		Setting modifier to true returns non-null, non-undefined, non-empty elements
-			and if number then it should be a number.
+		Modifier can be a boolean flag or a function.
 	@end-module-documentation
 
 	@include:
 		{
+			"doubt": "doubt",
+			"falze": "falze",
 			"harden": "harden",
-			"raze": "raze",
+			"protype": "protype",
+			"pyck": "pyck",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var harden = require( "harden" );
-	var raze = require( "raze" );
-	var zelf = require( "zelf" );
-}
-
-if( typeof window != "undefined" &&
-	!( "harden" in window ) )
-{
-	throw new Error( "harden is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "raze" in window ) )
-{
-	throw new Error( "raze is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "zelf" in window ) )
-{
-	throw new Error( "zelf is not defined" );
-}
+const doubt = require( "harden" );
+const falze = require( "falze" );
+const harden = require( "harden" );
+const protype = require( "protype" );
+const pyck = require( "pyck" );
+const zelf = require( "zelf" );
 
 harden( "BOOLEAN", "boolean" );
 harden( "FUNCTION", "function" );
@@ -85,8 +70,9 @@ harden( "NUMBER", "number" );
 harden( "OBJECT", "object" );
 harden( "STRING", "string" );
 harden( "UNDEFINED", "undefined" );
+harden( "SYMBOL", "symbol" );
 
-var optall = function optall( list, condition, modifier ){
+const optall = function optall( list, condition, modifier ){
 	/*;
 		@meta-configuration:
 			{
@@ -96,68 +82,51 @@ var optall = function optall( list, condition, modifier ){
 				],
 				"condition:required": [
 					"string",
-					"function"
+					"function",
+					BOOLEAN,
+					FUNCTION,
+					NUMBER,
+					OBJECT,
+					STRING,
+					UNDEFINED,
+					SYMBOL,
+					"[string, function]"
 				],
 				"modifier": [
 					"function",
-					true
+					"boolean"
 				]
 			}
 		@end-meta-configuration
 	*/
 
-	if( typeof condition != STRING &&
-		typeof condition != FUNCTION )
-	{
+	if( !doubt( list, AS_ARRAY ) ){
+		throw new Error( "invalid list" );
+	}
+
+	if( falze( condition ) ){
 		throw new Error( "invalid condition" );
 	}
 
-	if( typeof condition == STRING &&
-		condition != BOOLEAN &&
-		condition != FUNCTION &&
-		condition != NUMBER &&
-		condition != OBJECT &&
-		condition != STRING &&
-		condition != UNDEFINED )
-	{
-		throw new Error( "invalid type condition" );
-	}
+	let self = zelf( this );
 
-	var self = zelf( this );
+	let modifierType = protype( modifier );
 
-	var parameter = raze( list )
-		.filter( function onEachItem( item, index ){
-			if( typeof condition == STRING ){
-				return ( typeof item == condition );
+	let result = [ ];
 
-			}else if( typeof condition == FUNCTION &&
-				( /^[A-Z]/ ).test( condition.name ) )
-			{
-				return ( item instanceof condition );
-
-			}else{
-				return condition.bind( self )( item, index );
-			}
-		} );
-
-	if( typeof modifier == BOOLEAN &&
-		modifier === true )
-	{
-		return parameter.filter( function onEachItem( item ){
-			return ( item !== null &&
-				typeof item != UNDEFINED &&
-				item !== "" &&
-				!isNaN( item ) );
-		} );
-
-	}else if( typeof modifier == FUNCTION ){
-		return parameter.map( modifier );
+	if( modifierType.BOOLEAN ){
+		result = pyck.bind( self )( list, condition, modifier );
 
 	}else{
-		return parameter;
+		result = pyck.bind( self )( list, condition );
+	}
+
+	if( modifierType.FUNCTION ){
+		return result.map( modifier );
+
+	}else{
+		return result;
 	}
 };
 
-if( typeof module != "undefined" ){
-	module.exports = optall;
-}
+module.exports = optall;
