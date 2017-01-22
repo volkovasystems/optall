@@ -3,7 +3,7 @@
 		The MIT License (MIT)
 		@mit-license
 
-		Copyright (@c) 2016 Richeve Siodina Bebedor
+		Copyright (@c) 2017 Richeve Siodina Bebedor
 		@email: richeve.bebedor@gmail.com
 
 		Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,6 +33,9 @@
 			"module": "optall",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"repository": "https://github.com/volkovasystems/optall.git",
 			"test": "optall-test.js",
 			"global": true
@@ -110,18 +113,16 @@ const optall = function optall( list, condition, modifier ){
 
 	let self = zelf( this );
 
-	let modifierType = protype( modifier );
-
 	let result = [ ];
 
-	if( modifierType.BOOLEAN ){
+	if( protype( modifier, BOOLEAN ) ){
 		result = pyck.bind( self )( list, condition, modifier );
 
 	}else{
 		result = pyck.bind( self )( list, condition );
 	}
 
-	if( modifierType.FUNCTION ){
+	if( protype( modifier, FUNCTION ) ){
 		return result.map( modifier );
 
 	}else{
