@@ -1,6 +1,6 @@
 {
   "name": "optall",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Extract all designated elements.",
   "main": "optall.js",
   "support": "optall.support.js",
@@ -30,7 +30,7 @@
     "falze": "^0.3.0",
     "harden": "^0.13.0",
     "protype": "^0.8.0",
-    "pyck": "^0.6.0",
+    "pyck": "^0.7.0",
     "zelf": "^0.4.0"
   }
 }
