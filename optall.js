@@ -1,3 +1,5 @@
+"use strict";
+
 /*;
 	@module-license:
 		The MIT License (MIT)
@@ -32,6 +34,9 @@
 			"file": "optall.js",
 			"module": "optall",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
