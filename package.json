@@ -1,10 +1,11 @@
 {
   "name": "optall",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Extract all designated elements.",
   "main": "optall.js",
   "support": "optall.support.js",
   "deploy": "optall.deploy.js",
+  "browser": "optall.deploy.js",
   "scripts": {
     "build": "babel optall.js -o optall.support.js && webpack",
     "test": "mocha optall-test.js"
@@ -31,11 +32,11 @@
   "homepage": "https://github.com/volkovasystems/optall#readme",
   "dependencies": {
     "babel-runtime": "^6.22.0",
-    "doubt": "^0.10.0",
-    "falze": "^0.5.0",
+    "doubt": "^0.14.0",
+    "falze": "^0.8.0",
     "harden": "^0.14.0",
-    "protype": "^0.11.0",
-    "pyck": "^0.8.0",
+    "protype": "^0.15.0",
+    "pyck": "^0.10.0",
     "zelf": "^0.6.0"
   },
   "devDependencies": {
@@ -44,6 +45,6 @@
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-latest": "^6.22.0",
     "source-map-loader": "^0.1.6",
-    "webpack": "^1.14.0"
+    "webpack": "^2.2.1"
   }
 }
