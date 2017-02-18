@@ -1,8 +1,9 @@
 {
   "name": "optall",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Extract all designated elements.",
   "main": "optall.deploy.js",
+  "support": "optall.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
@@ -24,11 +25,11 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.14.0",
-    "falze": "^0.8.0",
-    "harden": "^0.14.0",
-    "protype": "^0.15.0",
-    "pyck": "^0.10.0",
-    "zelf": "^0.6.0"
+    "doubt": "^0.16.0",
+    "falze": "^0.10.0",
+    "harden": "^0.16.0",
+    "protype": "^0.17.0",
+    "pyck": "^0.11.0",
+    "zelf": "^0.8.0"
   }
 }
