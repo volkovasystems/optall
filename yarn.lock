@@ -1050,6 +1050,18 @@ doubt@^0.16.0:
     kount "^0.9.0"
     protype "^0.17.0"
 
+doubt@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.17.0.tgz#9817bd2afa0b10f7d913ea562fbaffd4a0d7de75"
+  dependencies:
+    babel-runtime "^6.23.0"
+    cemento "^0.11.0"
+    circular-json "^0.3.1"
+    falzy "^0.13.0"
+    harden "^0.16.0"
+    khount "^0.0.0"
+    protype "^0.17.0"
+
 ecc-jsbn@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
@@ -1609,6 +1621,12 @@ kein@^0.10.0:
     falzy "^0.13.0"
     protype "^0.17.0"
 
+khount@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/khount/-/khount-0.0.0.tgz#7c7f369ae5d0ef5499dca14eeb168bb4b4b29e6d"
+  dependencies:
+    babel-runtime "^6.23.0"
+
 kind-of@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.1.0.tgz#475d698a5e49ff5e53d14e3e732429dc8bf4cf47"
@@ -2000,18 +2018,18 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-pyck@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/pyck/-/pyck-0.11.0.tgz#22bdc5c66418f9f31f063ac0629005d589e3a8e7"
+pyck@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/pyck/-/pyck-0.12.0.tgz#6828211a93917f1f5d7ba8772ab3227d20b805e8"
   dependencies:
     babel-runtime "^6.23.0"
     clazof "^0.11.0"
-    doubt "^0.16.0"
+    doubt "^0.17.0"
     falze "^0.10.0"
     falzy "^0.13.0"
     harden "^0.16.0"
     protype "^0.17.0"
-    raze "^0.18.0"
+    raze "^0.19.0"
     truu "^0.11.0"
     zelf "^0.8.0"
 
@@ -2044,6 +2062,14 @@ raze@^0.18.0:
   dependencies:
     babel-runtime "^6.23.0"
     doubt "^0.16.0"
+    harden "^0.16.0"
+
+raze@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/raze/-/raze-0.19.0.tgz#9656446f96cc8c7935e414c9b883aca398f23294"
+  dependencies:
+    babel-runtime "^6.23.0"
+    doubt "^0.17.0"
     harden "^0.16.0"
 
 rc@~1.1.6:
