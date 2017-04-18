@@ -55,7 +55,6 @@
 		{
 			"doubt": "doubt",
 			"falze": "falze",
-			"harden": "harden",
 			"protype": "protype",
 			"pyck": "pyck",
 			"zelf": "zelf"
@@ -65,18 +64,9 @@
 
 const doubt = require( "doubt" );
 const falze = require( "falze" );
-const harden = require( "harden" );
 const protype = require( "protype" );
 const pyck = require( "pyck" );
 const zelf = require( "zelf" );
-
-harden( "BOOLEAN", "boolean" );
-harden( "FUNCTION", "function" );
-harden( "NUMBER", "number" );
-harden( "OBJECT", "object" );
-harden( "STRING", "string" );
-harden( "UNDEFINED", "undefined" );
-harden( "SYMBOL", "symbol" );
 
 const optall = function optall( list, condition, modifier ){
 	/*;
