@@ -1,6 +1,8 @@
 "use strict";
 
+const assert = require( "assert" );
 const optall = require( "./optall.js" );
 
-console.log( optall( [ 1, 2, 3 ], 2, true ) );
-console.log( optall( ) );
+assert.deepEqual( optall( [ 1, 2, 3 ], 2, true ), [ 2 ] );
+
+console.log( "ok" );
