@@ -1,6 +1,6 @@
 {
   "name": "optall",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "description": "Extract all designated elements.",
   "main": "optall.deploy.js",
   "support": "optall.support.js",
@@ -28,7 +28,7 @@
     "doubt": "^0.26.0",
     "falze": "^0.22.0",
     "protype": "^0.21.0",
-    "pyck": "^0.27.0",
+    "pyck": "^0.28.0",
     "zelf": "^0.11.0"
   }
 }
