@@ -52,7 +52,6 @@
 	@include:
 		{
 			"doubt": "doubt",
-			"falze": "falze",
 			"protype": "protype",
 			"pyck": "pyck",
 			"zelf": "zelf"
@@ -61,7 +60,6 @@
 */
 
 const doubt = require( "doubt" );
-const falze = require( "falze" );
 const protype = require( "protype" );
 const pyck = require( "pyck" );
 const zelf = require( "zelf" );
@@ -96,10 +94,6 @@ const optall = function optall( list, condition, modifier ){
 
 	if( !doubt( list, AS_ARRAY ) ){
 		throw new Error( "invalid list" );
-	}
-
-	if( falze( condition ) ){
-		throw new Error( "invalid condition" );
 	}
 
 	let self = zelf( this );

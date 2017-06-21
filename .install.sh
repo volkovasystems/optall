@@ -1,7 +1,6 @@
 yarn add \
 babel-runtime \
 doubt \
-falze \
 protype \
 pyck \
 zelf \
@@ -16,7 +15,6 @@ webpack \
 --dev && \
 bower install \
 doubt \
-falze \
 protype \
 pyck \
 zelf \
