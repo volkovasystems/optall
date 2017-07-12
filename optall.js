@@ -52,7 +52,6 @@
 	@include:
 		{
 			"doubt": "doubt",
-			"protype": "protype",
 			"pyck": "pyck",
 			"zelf": "zelf"
 		}
@@ -60,7 +59,6 @@
 */
 
 const doubt = require( "doubt" );
-const protype = require( "protype" );
 const pyck = require( "pyck" );
 const zelf = require( "zelf" );
 
@@ -100,14 +98,14 @@ const optall = function optall( list, condition, modifier ){
 
 	let result = [ ];
 
-	if( protype( modifier, BOOLEAN ) ){
+	if( typeof modifier == "boolean" ){
 		result = pyck.bind( self )( list, condition, modifier );
 
 	}else{
 		result = pyck.bind( self )( list, condition );
 	}
 
-	if( protype( modifier, FUNCTION ) ){
+	if( typeof modifier == "function" ){
 		return result.map( modifier );
 
 	}else{

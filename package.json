@@ -1,6 +1,6 @@
 {
   "name": "optall",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "Extract all designated elements.",
   "main": "optall.js",
   "support": "optall.support.js",
@@ -33,9 +33,8 @@
   "homepage": "https://github.com/volkovasystems/optall#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "doubt": "^0.27.0",
-    "protype": "^0.22.0",
-    "pyck": "^0.35.0",
+    "doubt": "^0.30.0",
+    "pyck": "^0.36.0",
     "zelf": "^0.12.0"
   },
   "devDependencies": {
@@ -44,6 +43,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^3.0.0"
+    "webpack": "^3.2.0"
   }
 }
