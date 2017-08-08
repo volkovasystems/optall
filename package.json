@@ -1,48 +1,51 @@
 {
-  "name": "optall",
-  "version": "0.27.0",
-  "description": "Extract all designated elements.",
-  "main": "optall.js",
-  "support": "optall.support.js",
-  "deploy": "optall.deploy.js",
-  "browser": "optall.deploy.js",
-  "scripts": {
-    "build": "babel optall.js --out-file optall.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha optall-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/optall.git"
-  },
-  "keywords": [
-    "extract",
-    "all",
-    "designated",
-    "elements",
-    "optall"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/optall/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/optall#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "doubt": "^0.30.0",
-    "pyck": "^0.36.0",
-    "zelf": "^0.12.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.2.0"
-  }
+	"name": "optall",
+	"version": "0.28.0",
+	"description": "Extract all designated elements.",
+	"main": "optall.js",
+	"support": "optall.support.js",
+	"deploy": "optall.deploy.js",
+	"browser": "optall.deploy.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"build": "babel optall.js --out-file optall.support.js --source-maps && webpack --progress --display-modules",
+		"pretest": "npm run clear && npm run build",
+		"test": "node optall-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/optall.git"
+	},
+	"keywords": [
+		"extract",
+		"all",
+		"designated",
+		"elements",
+		"optall"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/optall/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/optall#readme",
+	"dependencies": {
+		"babel-runtime": "^6.25.0",
+		"doubt": "^0.34.0",
+		"pyck": "^0.38.0",
+		"zelf": "^0.14.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.5.0"
+	}
 }
