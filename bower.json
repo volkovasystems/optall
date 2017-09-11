@@ -1,33 +1,28 @@
 {
-  "name": "optall",
-  "version": "0.28.0",
-  "description": "Extract all designated elements.",
-  "main": "optall.deploy.js",
-  "support": "optall.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "extract",
-    "all",
-    "designated",
-    "elements",
-    "optall"
-  ],
-  "homepage": "https://github.com/volkovasystems/optall",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "doubt": "^0.34.0",
-    "pyck": "^0.38.0",
-    "zelf": "^0.14.0"
-  }
+	"name": "optall",
+	"version": "0.28.0",
+	"description": "Extract all designated elements.",
+	"main": "optall.deploy.js",
+	"support": "optall.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"extract",
+		"all",
+		"designated",
+		"elements",
+		"optall"
+	],
+	"homepage": "https://github.com/volkovasystems/optall",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
