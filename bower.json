@@ -24,5 +24,10 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"doubt": "^0.34.0",
+		"pyck": "^0.38.0",
+		"zelf": "^0.14.0"
+	}
 }

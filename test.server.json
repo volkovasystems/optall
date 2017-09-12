@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-09-11T19:07:16.521Z",
-    "end": "2017-09-11T19:07:16.522Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-09-12T08:03:36.763Z",
+		"end": "2017-09-12T08:03:36.769Z",
+		"duration": 6
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 2 ]",
+			"fullTitle": "optall `optall( [ 1, 2, 3 ], 2, true )` should be equal to [ 2 ]",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 2 ]",
+			"fullTitle": "optall `optall( [ 1, 2, 3 ], 2, true )` should be equal to [ 2 ]",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

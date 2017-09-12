@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-09-12T08:03:37.955Z",
+	"end": "2017-09-12T08:04:13.599Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "optall",
+			"duration": 0,
+			"start": "2017-09-12T08:04:13.313Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "optall",
+			"duration": 109,
+			"start": "2017-09-12T08:04:13.314Z",
+			"end": "2017-09-12T08:04:13.423Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-09-12T08:04:13.315Z",
+					"end": "2017-09-12T08:04:13.315Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "optall",
+					"associatedTest": "should be equal to [ 2 ]"
+				},
+				{
+					"start": "2017-09-12T08:04:13.421Z",
+					"end": "2017-09-12T08:04:13.422Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "optall",
+					"associatedTest": "should be equal to [ 2 ]"
+				},
+				{
+					"start": "2017-09-12T08:04:13.423Z",
+					"end": "2017-09-12T08:04:13.423Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "optall"
+				}
+			]
+		},
+		{
+			"name": "`optall( [ 1, 2, 3 ], 2, true )`",
+			"duration": 108,
+			"start": "2017-09-12T08:04:13.314Z",
+			"end": "2017-09-12T08:04:13.422Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 2 ]",
+					"start": "2017-09-12T08:04:13.315Z",
+					"end": "2017-09-12T08:04:13.421Z",
+					"duration": 106,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

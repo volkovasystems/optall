@@ -51,7 +51,7 @@
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const optall = require( "./optall.js" );
@@ -63,11 +63,15 @@ const optall = require( "./optall.js" );
 
 
 //: @server:
-
 describe( "optall", ( ) => {
 
-} );
+	describe( "`optall( [ 1, 2, 3 ], 2, true )`", ( ) => {
+		it( "should be equal to [ 2 ]", ( ) => {
+			assert.deepEqual( optall( [ 1, 2, 3 ], 2, true ), [ 2 ] );
+		} );
+	} );
 
+} );
 //: @end-server
 
 
