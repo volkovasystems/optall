@@ -51,7 +51,7 @@
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const optall = require( "./optall.js" );
@@ -67,27 +67,53 @@ const path = require( "path" );
 
 
 //: @server:
-
 describe( "optall", ( ) => {
 
-} );
+	describe( "`optall( [ 1, 2, 3 ], 2, true )`", ( ) => {
+		it( "should be equal to [ 2 ]", ( ) => {
+			assert.deepEqual( optall( [ 1, 2, 3 ], 2, true ), [ 2 ] );
+		} );
+	} );
 
+} );
 //: @end-server
 
 
 //: @client:
-
 describe( "optall", ( ) => {
 
-} );
+	describe( "`optall( [ 1, 2, 3 ], 2, true )`", ( ) => {
+		it( "should be equal to [ 2 ]", ( ) => {
+			assert.deepEqual( optall( [ 1, 2, 3 ], 2, true ), [ 2 ] );
+		} );
+	} );
 
+} );
 //: @end-client
 
 
 //: @bridge:
-
 describe( "optall", ( ) => {
 
-} );
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( "`optall( [ 1, 2, 3 ], 2, true )`", ( ) => {
+		it( "should be equal to [ 2 ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					return JSON.stringify( optall( [ 1, 2, 3 ], 2, true ) );
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.deepEqual( JSON.parse( result ), [ 2 ] );
+		} );
+	} );
+
+} );
 //: @end-bridge
